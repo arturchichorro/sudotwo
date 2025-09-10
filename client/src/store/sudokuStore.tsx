@@ -8,7 +8,7 @@ interface SudokuStore {
     solutionBoard: Board
     selectedCell: CellPosition | null
 
-    setCell: (row: number, col: number, value: number) => void
+    setCell: (row: number, col: number, value: number) => void // Should be local, when I add the server make it server
     selectCell: (row: number, col: number) => void
     clearSelection: () => void
 

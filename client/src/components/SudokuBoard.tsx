@@ -42,7 +42,7 @@ const SudokuBoard = () => {
                                             ${isHighligted ? 'bg-[#e6f0ff]' : ''}
                                         `}>
                                             <input
-                                                className="w-12 h-12 text-center border-none outline-none cursor-default focus:bg-[#78b1eb] focus:caret-transparent"
+                                                className={`w-12 h-12 text-center text-xl border-none outline-none cursor-default focus:bg-[#78b1eb] focus:caret-transparent ${isPrefilled ? "text-gray-400" : "text-gray-900"}`}
                                                 type="text"
                                                 readOnly={isPrefilled}
                                                 maxLength={1}
